@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travels · Cecília Duarte Garcia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="fundo-gradiente"></div>
+
+  <header class="topo">
+    <a href="index.html" class="logo">Cecília</a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#life">Life</a>
+      <a href="curriculo.html">Resume</a>
+      <a href="jogos.html">Games</a>
+      <a href="viagens.html" class="ativo">Travels</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="tema" class="btn-tema" aria-label="Alternar tema claro/escuro">🌙</button>
+    </nav>
+  </header>
+
+  <section class="secao">
+    <h2>Travels &amp; life abroad</h2>
+    <p class="secao-intro">Being an au pair and traveling shaped a lot of who I am. Here's a bit of that journey.</p>
+
+    <!-- Painel de estatísticas -->
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Countries visited</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">9</span>
+        <span class="stat-label">Months as au pair</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">7</span>
+        <span class="stat-label">Cities explored</span>
+      </div>
+    </div>
+
+    <!-- Globo 3D Retrô Interativo com países visitados marcados com coração -->
+    <div class="globo-painel">
+      <div>
+        <h3 class="cv-titulo">Places on my map</h3>
+        <p>
+          From growing up in <strong>Brazil</strong> and exploring neighboring
+          <strong>Uruguay</strong> to living for 9 months in the mountains of
+          <strong>Idaho, USA</strong> and visiting <strong>Budapest, Hungary</strong>,
+          each place left its mark on how I see the world.
+        </p>
+        <p style="margin-top: 0.7rem;">
+          Click a destination below or drag the globe to spin to the countries
+          marked with a heart:
+        </p>
+        <div class="globo-destinos">
+          <button type="button" class="btn-destino" data-lon="-51.2" data-lat="-25.0">
+            <span class="coracao-pin">♥</span> Brazil
+          </button>
+          <button type="button" class="btn-destino" data-lon="-105.0" data-lat="40.0">
+            <span class="coracao-pin">♥</span> USA
+          </button>
+          <button type="button" class="btn-destino" data-lon="-56.0" data-lat="-33.0">
+            <span class="coracao-pin">♥</span> Uruguay
+          </button>
+          <button type="button" class="btn-destino" data-lon="19.0" data-lat="47.5">
+            <span class="coracao-pin">♥</span> Budapest, Hungary
+          </button>
+        </div>
+      </div>
+
+      <div class="globo-canvas-wrap">
+        <canvas id="globo-viagens" width="320" height="320" aria-label="Interactive 3D globe showing countries visited: Brazil, USA, Uruguay, and Hungary"></canvas>
+        <span class="globo-dica">Drag to rotate · Click a country tag to focus</span>
+      </div>
+    </div>
+
+    <div class="texto">
+      <h3 class="cv-titulo">Au pair experience</h3>
+      <p>
+        I spent <strong>9 months as an au pair in Ketchum, Idaho (USA)</strong>, a
+        formative chapter that taught me independence, adaptability, and how much
+        there is to learn from living inside a different culture. Nearby
+        <strong>Sun Valley</strong> became one of my favorite places in the world.
+      </p>
+      <blockquote class="citacao">
+        "Happiness is only real when shared."
+      </blockquote>
+    </div>
+
+    <div class="texto">
+      <h3 class="cv-titulo">Words that stayed with me</h3>
+      <blockquote class="citacao">
+        "However difficult life may seem, there is always something that you can
+        do and succeed at."
+        <cite>Stephen Hawking</cite>
+      </blockquote>
+      <blockquote class="citacao">
+        "No matter how you feel, don't keep your feelings to yourself. Share them
+        with someone you love."
+        <cite>Todd Parr</cite>
+      </blockquote>
+    </div>
+
+    <div class="texto">
+      <h3 class="cv-titulo">Places I've been</h3>
+      <p>
+        From home to across the world, a few of the places that stayed with me,
+        with <strong>Sun Valley</strong> at the top of the list.
+      </p>
+    </div>
+
+    <div class="galeria">
+      <figure>
+        <img src="fotos/lago-idaho.jpg" alt="Alpine lake surrounded by pine forest near Sun Valley, Idaho" loading="lazy" />
+        <figcaption>Lakes near Sun Valley, Idaho</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/ketchum.jpg" alt="Downtown Ketchum, Idaho in the fall" loading="lazy" />
+        <figcaption>Downtown Ketchum, Idaho (fall)</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/ketchum-inverno.jpg" alt="Snowy street in Ketchum, Idaho in winter" loading="lazy" />
+        <figcaption>Ketchum, Idaho (winter)</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/hoquei.jpg" alt="Hockey sticks by a frozen pond in the mountains" loading="lazy" />
+        <figcaption>Pond hockey · Sun Valley, Idaho</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/shoshone-falls.jpg" alt="Shoshone Falls waterfall with a rainbow, Twin Falls, Idaho" loading="lazy" />
+        <figcaption>Shoshone Falls · Twin Falls, ID</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/snake-river.jpg" alt="Snake River Canyon with turquoise water, Twin Falls, Idaho" loading="lazy" />
+        <figcaption>Snake River Canyon · Twin Falls, ID</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/jardim.jpg" alt="Rose garden at sunset" loading="lazy" />
+        <figcaption>Rose garden at sunset · Indiana</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/predio.jpg" alt="Historic red-brick building" loading="lazy" />
+        <figcaption>Historic architecture</figcaption>
+      </figure>
+      <figure>
+        <img src="fotos/estatua.jpg" alt="Bronze sculpture in a garden" loading="lazy" />
+        <figcaption>Bronze sculpture</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with 💚 by Cecília Duarte Garcia · 2026</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3-array@3/dist/d3-array.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-geo@3/dist/d3-geo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      const canvas = document.getElementById("globo-viagens");
+      if (!canvas || !window.d3 || !window.topojson) return;
+
+      const dpr = window.devicePixelRatio || 1;
+      const size = 310;
+      canvas.width = size * dpr;
+      canvas.height = size * dpr;
+      const ctx = canvas.getContext("2d");
+      ctx.scale(dpr, dpr);
+
+      const projection = d3.geoOrthographic()
+        .scale(size * 0.43)
+        .translate([size / 2, size / 2])
+        .clipAngle(90);
+
+      const path = d3.geoPath(projection, ctx);
+      const graticule = d3.geoGraticule10();
+
+      // Códigos ISO numéricos dos países visitados: Brasil (076), EUA (840), Uruguai (858), Hungria (348)
+      const visitadosIds = new Set(["076", "840", "858", "348", 76, 840, 858, 348]);
+
+      const marcadores = [
+        { nome: "Brazil", coords: [-51.2, -15.8] },
+        { nome: "USA", coords: [-114.3, 43.7] },
+        { nome: "Uruguay", coords: [-56.0, -33.0] },
+        { nome: "Budapest", coords: [19.04, 47.5] }
+      ];
+
+      let paises = [];
+      let rotacao = [55, -12, 0];
+      let alvoRotacao = null;
+      let arrastando = false;
+      let posAnterior = null;
+      let pausaAutoGiro = 0;
+
+      function coresTema() {
+        const escuro = document.documentElement.getAttribute("data-theme") === "dark";
+        return escuro
+          ? {
+              oceano: "#1f2726",
+              grade: "rgba(168, 204, 200, 0.16)",
+              terra: "#2c3b39",
+              visitado: "#567d79",
+              borda: "rgba(168, 204, 200, 0.45)",
+              bordaGlobo: "#6d9692",
+              sombra: "rgba(0, 0, 0, 0.35)",
+              coracao: "#ef8a8e",
+              coracaoBorda: "#1f2726",
+              texto: "#e6efe2"
+            }
+          : {
+              oceano: "#f9eedd",
+              grade: "rgba(109, 150, 146, 0.22)",
+              terra: "#e6efe2",
+              visitado: "#7ea8a4",
+              borda: "rgba(78, 122, 119, 0.45)",
+              bordaGlobo: "#4e7a77",
+              sombra: "rgba(226, 198, 182, 0.75)",
+              coracao: "#d96b70",
+              coracaoBorda: "#ffffff",
+              texto: "#3b6360"
+            };
+      }
+
+      function desenharCoracao(x, y, r, corPreenchimento, corBorda) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.beginPath();
+        ctx.moveTo(0, r * 0.35);
+        ctx.bezierCurveTo(-r, -r * 0.35, -r * 0.55, -r * 1.15, 0, -r * 0.45);
+        ctx.bezierCurveTo(r * 0.55, -r * 1.15, r, -r * 0.35, 0, r * 0.35);
+        ctx.closePath();
+        ctx.fillStyle = corPreenchimento;
+        ctx.fill();
+        ctx.lineWidth = 1.6;
+        ctx.strokeStyle = corBorda;
+        ctx.stroke();
+        ctx.restore();
+      }
+
+      function desenhar() {
+        const c = coresTema();
+        ctx.clearRect(0, 0, size, size);
+
+        // Sombra retrô suave do globo
+        ctx.beginPath();
+        ctx.arc(size / 2 + 4, size / 2 + 4, projection.scale(), 0, Math.PI * 2);
+        ctx.fillStyle = c.sombra;
+        ctx.fill();
+
+        // Oceano bege/escuro
+        ctx.beginPath();
+        path({ type: "Sphere" });
+        ctx.fillStyle = c.oceano;
+        ctx.fill();
+
+        // Linhas de grade retrô (meridianos e paralelos)
+        ctx.beginPath();
+        path(graticule);
+        ctx.strokeStyle = c.grade;
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+
+        // Países
+        paises.forEach((pais) => {
+          ctx.beginPath();
+          path(pais);
+          ctx.fillStyle = visitadosIds.has(pais.id) ? c.visitado : c.terra;
+          ctx.fill();
+          ctx.strokeStyle = c.borda;
+          ctx.lineWidth = 0.65;
+          ctx.stroke();
+        });
+
+        // Contorno externo do globo
+        ctx.beginPath();
+        path({ type: "Sphere" });
+        ctx.strokeStyle = c.bordaGlobo;
+        ctx.lineWidth = 1.8;
+        ctx.stroke();
+
+        // Corações nos países visitados (apenas se estiverem no lado visível do globo)
+        const centroGlobo = [-rotacao[0], -rotacao[1]];
+        marcadores.forEach((m) => {
+          const distanciaAngular = d3.geoDistance(m.coords, centroGlobo);
+          if (distanciaAngular < Math.PI / 2 - 0.05) {
+            const p = projection(m.coords);
+            if (p) {
+              desenharCoracao(p[0], p[1], 7.5, c.coracao, c.coracaoBorda);
+              ctx.font = "700 10.5px 'Share Tech Mono', monospace";
+              ctx.fillStyle = c.texto;
+              ctx.textAlign = "center";
+              ctx.fillText(m.nome, p[0], p[1] + 13);
+            }
+          }
+        });
+      }
+
+      function animar() {
+        if (alvoRotacao) {
+          const dx = alvoRotacao[0] - rotacao[0];
+          const dy = alvoRotacao[1] - rotacao[1];
+          rotacao[0] += dx * 0.09;
+          rotacao[1] += dy * 0.09;
+          if (Math.abs(dx) < 0.15 && Math.abs(dy) < 0.15) {
+            alvoRotacao = null;
+          }
+        } else if (!arrastando && Date.now() > pausaAutoGiro) {
+          rotacao[0] -= 0.18;
+        }
+        projection.rotate(rotacao);
+        desenhar();
+        requestAnimationFrame(animar);
+      }
+
+      // Interação de arrastar com mouse / toque
+      canvas.addEventListener("pointerdown", (e) => {
+        arrastando = true;
+        alvoRotacao = null;
+        posAnterior = [e.clientX, e.clientY];
+        canvas.setPointerCapture(e.pointerId);
+      });
+
+      canvas.addEventListener("pointermove", (e) => {
+        if (!arrastando || !posAnterior) return;
+        const dx = e.clientX - posAnterior[0];
+        const dy = e.clientY - posAnterior[1];
+        rotacao[0] += dx * 0.45;
+        rotacao[1] = Math.max(-65, Math.min(65, rotacao[1] - dy * 0.45));
+        posAnterior = [e.clientX, e.clientY];
+        pausaAutoGiro = Date.now() + 2500;
+      });
+
+      canvas.addEventListener("pointerup", () => {
+        arrastando = false;
+      });
+
+      canvas.addEventListener("pointercancel", () => {
+        arrastando = false;
+      });
+
+      // Botões para focar diretamente em cada país visitado
+      const botoes = document.querySelectorAll(".btn-destino");
+      botoes.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          botoes.forEach((b) => b.classList.remove("ativo"));
+          btn.classList.add("ativo");
+          const lon = parseFloat(btn.getAttribute("data-lon"));
+          const lat = parseFloat(btn.getAttribute("data-lat"));
+          alvoRotacao = [-lon, -lat, 0];
+          pausaAutoGiro = Date.now() + 4500;
+        });
+      });
+
+      // Carrega o mapa-múndi (World Atlas 110m)
+      fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json")
+        .then((r) => r.json())
+        .then((world) => {
+          paises = topojson.feature(world, world.objects.countries).features;
+          animar();
+        });
+    })();
+  </script>
+</body>
+</html>

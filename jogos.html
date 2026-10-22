@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games · Cecília Duarte Garcia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="fundo-gradiente"></div>
+
+  <header class="topo">
+    <a href="index.html" class="logo">Cecília</a>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#life">Life</a>
+      <a href="curriculo.html">Resume</a>
+      <a href="jogos.html" class="ativo">Games</a>
+      <a href="viagens.html">Travels</a>
+      <a href="index.html#contact">Contact</a>
+      <button id="tema" class="btn-tema" aria-label="Alternar tema claro/escuro">🌙</button>
+    </nav>
+  </header>
+
+  <section class="secao">
+    <h2>Games I love</h2>
+    <p class="secao-intro">From reaching Challenger in Wild Rift to surviving harsh winters in Don't Starve, here is what I love playing when I'm off the clock.</p>
+
+    <!-- Painel de estatísticas -->
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">S22</span>
+        <span class="stat-label">Challenger (Wild Rift)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">339h</span>
+        <span class="stat-label">Logged in Don't Starve</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Main games in rotation</span>
+      </div>
+    </div>
+
+    <!-- Painel com Gamer Tags + PNG do Elo com efeito Claro/Escuro -->
+    <div class="gamer-painel">
+      <div>
+        <h3 class="cv-titulo">Why I love gaming</h3>
+        <p>
+          Gaming is my favorite way to unwind, connect with friends, and keep my
+          strategic thinking sharp. Whether it's making split-second macro decisions
+          in the Rift, adapting builds on the fly in the Convergence, or surviving
+          harsh winters with Wigfrid, I love games that reward creativity,
+          teamwork, and adaptability.
+        </p>
+        <p style="margin-top: 0.8rem;">
+          Right at the top of my list is <strong>League of Legends: Wild Rift</strong>,
+          my absolute favorite game, where I reached <strong>Challenger in Season 22</strong>!
+        </p>
+
+        <div class="nick-lista">
+          <span class="nick-badge" title="Riot ID (Wild Rift, LoL &amp; TFT)">
+            <span class="nick-plataforma">Riot ID</span> huni #997
+          </span>
+        </div>
+      </div>
+
+      <!-- PNG recortado do elo Challenger (penúltimo) com efeito Claro / Escuro -->
+      <div class="arte-tema-box" title="Toggle the theme button (🌙/☀️) in the top menu to see the glow effect!">
+        <img src="fotos/rank-5.png" alt="Season 22 Challenger Rank Emblem" class="rank-png" />
+        <span class="arte-titulo">Season 22 Challenger</span>
+        <span class="arte-sub">Wild Rift · huni #997</span>
+      </div>
+    </div>
+
+    <div class="grade-projetos">
+      <article class="card">
+        <div class="card-topo">
+          <span class="tag">#1 Favorite · Mobile MOBA</span>
+          <span class="horas-badge">S22 Challenger</span>
+        </div>
+        <h3>League of Legends: Wild Rift</h3>
+        <p>
+          My all-time favorite game! Reached <strong>Challenger in Season 22</strong>.
+          I love the fast-paced 5v5 matches, high-stakes teamfights, and bringing
+          strategic macro play to every ranked climb.
+        </p>
+        <p class="card-nick">Riot ID: <strong>huni #997</strong></p>
+      </article>
+
+      <article class="card">
+        <div class="card-topo">
+          <span class="tag">MOBA · PC</span>
+          <span class="horas-badge">PC MOBA</span>
+        </div>
+        <h3>League of Legends</h3>
+        <p>
+          The classic Rift experience. From laning phase fundamentals and map
+          control to coordinated objective fights, there is always something new
+          to master every match.
+        </p>
+        <p class="card-nick">Riot ID: <strong>huni #997</strong></p>
+      </article>
+
+      <article class="card">
+        <div class="card-topo">
+          <span class="tag">Auto Battler · Strategy</span>
+          <span class="horas-badge">Tactics</span>
+        </div>
+        <h3>Teamfight Tactics (TFT)</h3>
+        <p>
+          Pure strategy and adaptability in the Convergence. Building synergies,
+          managing economy, and pivoting comps under pressure makes every lobby a
+          fun tactical puzzle.
+        </p>
+        <p class="card-nick">Riot ID: <strong>huni #997</strong></p>
+      </article>
+
+      <article class="card">
+        <div class="card-topo">
+          <span class="tag">Survival · Indie</span>
+          <span class="horas-badge">339h Played</span>
+        </div>
+        <h3>Don't Starve</h3>
+        <p>
+          <strong>339 hours logged!</strong> A charmingly dark and unforgiving
+          wilderness survival game. I love surviving harsh winters, building up
+          camp with Wigfrid, and managing resources against the clock.
+        </p>
+        <p class="card-nick">Steam ID: <strong>Pernacurta</strong></p>
+        <img src="fotos/dont-starve.jpg" alt="Don't Starve winter base on Day 25 playing as Wigfrid" class="card-print" loading="lazy" />
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with 💚 by Cecília Duarte Garcia · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
